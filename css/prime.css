@@ -93,6 +93,10 @@ hr {
   color: #F80012;
 }
 
+.semi_bold{
+  font-weight: 500;
+}
+
 .about_awards_slider h2 {
   position: relative;
   margin-left: 10px;
@@ -983,7 +987,7 @@ main {
 .breadcrumb_row {
   right: 0;
   position: absolute;
-  z-index: 9999;
+  z-index: 1;
 }
 
 .breadcrumb {
@@ -1215,6 +1219,16 @@ main {
 
 /* filter */
 
+.blue_bg {
+  background-color: #73A9AD;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.blue_bg .form-label {
+  color: #ffffff !important;
+}
+
 .filter_div {
   background-color: #E8E8E8;
   border-radius: 10px;
@@ -1247,7 +1261,7 @@ main {
 
 .form-label {
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 500;
   color: #3D3D3D;
 }
 
@@ -1314,15 +1328,9 @@ main {
   height: 100%;
 }
 
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1333,11 +1341,12 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .swiper {
   width: 100%;
-  height: 300px;
+  height: 600px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1386,6 +1395,8 @@ main {
   color: #fff !important;
 }
 
+/* house detail page css */
+
 .project_slide_con{
   background-size: 1800px;
 }
@@ -1428,7 +1439,7 @@ main {
 
   .swiper {
     width: 100%;
-    height: 850px;
+    height: 600px;
   }
 
   .mySwiperDesktop .swiper-slide {
@@ -1446,15 +1457,42 @@ main {
 
 .count_box{
   background-color: #ffffff;
-  padding: 25px;
+  padding: 15px 22px;
+  display: flex;
+  margin-left: 10px;
+  border-radius: 5px;
+  min-width: 133px;
+  min-height: 50px;
+  justify-content: center;
 }
+
+.count_box img{
+  width: 20px;
+  height: 20px;
+}
+
+.count_box p{
+  position: relative;
+  margin-left: 30px;
+  font-weight: 600;
+}
+
+.count_box p::before{
+  content: "";
+  position: absolute;
+  background-color: red;
+  width: 1px;
+  height: 100%;
+  margin-left: -15px;
+}
+
 
 .badge {
   display: inline-block;
-  padding: 2px 6px;
   color: #fff;
   background: #ff334b;
   border-radius: 4px;
+  padding: 3px 5px 0px 2px;
 }
 
 .badge-wrap {
@@ -1485,8 +1523,7 @@ main {
 
 .badge-text {
   display: inline-flex;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 8px;
 }
 
 @-webkit-keyframes ani-breath {
