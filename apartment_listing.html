@@ -304,31 +304,33 @@
     <div class="clearfix"></div>
 
     <!-- land listing start -->
-    <div class="container-fluid pt-5 mb-5" style="background-image: url(images/gray_bg.png); background-repeat: no-repeat;">
+    <div class="container-fluid pt-5 mb-5 inner_listing" style="background-image: url(images/gray_bg.png); background-repeat: no-repeat;">
       <div class="container">
 
         <div class="row">
 
           <h1 class="mb-4 aos-init aos-animate" data-aos="fade-up">Find Your Property</h1>
 
-          <nav class="mt-4 box_tabs row_tabs">
+          <nav class="mt-4 box_tabs row_tabs justify-content-center d-flex">
             <div class="nav nav-tabs gap-3" id="nav-tab" role="tablist" style="border-bottom: 0px;">
-              <button class="nav-link active" id="nav-lands-tab" data-bs-toggle="tab" data-bs-target="#nav-lands" type="button" role="tab" aria-controls="nav-lands" aria-selected="true">
-                <img src="images/lands_black.png" alt="" class="medium_icon mb-2">
-                Lands
+              <button class="nav-link active text-uppercase" id="nav-​new-tab" data-bs-toggle="tab" data-bs-target="#nav-​new" type="button" role="tab" aria-controls="nav-​new" aria-selected="true">
+                NEWLY LAUNCHED
               </button>
-              <button class="nav-link" id="nav-houses-tab" data-bs-toggle="tab" data-bs-target="#nav-houses" type="button" role="tab" aria-controls="nav-houses" aria-selected="false">
-                <img src="images/house_black.png" alt="" class="medium_icon mb-2">
-                House
+              <button class="nav-link text-uppercase" id="nav-ongoing-tab" data-bs-toggle="tab" data-bs-target="#nav-ongoing" type="button" role="tab" aria-controls="nav-ongoing" aria-selected="false">
+                ONGOING
               </button>
-              <button class="nav-link" id="nav-apartments-tab" data-bs-toggle="tab" data-bs-target="#nav-apartments" type="button" role="tab" aria-controls="nav-apartments" aria-selected="false">
-                <img src="images/apartment_black.png" alt="" class="medium_icon mb-2">
-                Apartment
+              <button class="nav-link text-uppercase" id="nav-completed-tab" data-bs-toggle="tab" data-bs-target="#nav-completed" type="button" role="tab" aria-controls="nav-completed" aria-selected="false">
+                Completed & Ready To Occupy
+              </button>
+              <button class="nav-link text-uppercase" id="nav-sold-tab" data-bs-toggle="tab" data-bs-target="#nav-sold" type="button" role="tab" aria-controls="nav-sold" aria-selected="false">
+                SOLD OUT
               </button>
             </div>
           </nav>
-          
-          <!-- listing start -->
+
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="nav-​new" role="tabpanel" aria-labelledby="nav-​new-tab">
+              <!-- listing start -->
 
           <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
             <div class="row">
@@ -856,6 +858,10 @@
             </div>
           </div>
           <!-- side bar end -->
+            </div>
+          </div>
+          
+          
 
         </div>
       </div>
