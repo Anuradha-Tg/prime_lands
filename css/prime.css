@@ -34,6 +34,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #2E2E2E;
 }
 
 h1 {
@@ -82,6 +83,7 @@ h5 {
 p {
   font-size: 13px;
   font-weight: 400;
+  color: #2E2E2E;
 }
 
 hr {
@@ -163,7 +165,7 @@ hr {
 .form-control {
   box-shadow: none !important;
   font-size: 13px;
-  height: 40px;
+  min-height: 40px !important;
 }
 
 .margin_b_space {
@@ -350,6 +352,107 @@ hr {
   border: none;
 }
 
+/* arrow tab start */
+
+.arrow_tab .nav-link.active,
+.arrow_tab .show>.nav-link{
+  background-color: transparent;
+  color: #F80012 !important;
+}
+
+.arrow_tab{
+  font-size: 13px;
+  font-weight: 600 !important;
+}
+
+.arrow_tab .nav-item button.active::after {
+  content: "";
+  border-bottom: 1px solid #F80012;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  width: 100%;
+  position: absolute;
+  left: 44%;
+  bottom: -1px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 8px 7px 8px;
+}
+
+.arrow_tab .nav-item button.active::before{
+  content: "";
+  border-bottom: 1px solid #F80012;
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+}
+
+.arrow_tab .nav-item .nav-link{
+  color: #2E2E2E;
+  font-weight: 600;
+  padding: 0.5rem 3rem;
+}
+
+.tabs-left {
+  border-bottom: none;
+  border-right: 1px solid #ddd;
+}
+
+.tabs-left>li {
+  float: none;
+  margin: 0px;
+}
+
+.tabs-left>li.active>a,
+.tabs-left>li.active>a:hover,
+.tabs-left>li.active>a:focus {
+  border-bottom-color: #ddd;
+  border-right-color: transparent;
+  background: #f90;
+  border: none;
+  border-radius: 0px;
+  margin: 0px;
+}
+
+.nav-tabs>li>a:hover {
+  /* margin-right: 2px; */
+  line-height: 1.42857143;
+  border: 1px solid transparent;
+  /* border-radius: 4px 4px 0 0; */
+}
+
+.tabs-left>li.active>a::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: -10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+
+  border-left: 10px solid #f90;
+  display: block;
+  width: 0;
+}
+
+/* arrow tab end */
+
+/* custom ul start*/
+
+.custom_ul li{
+  font-size: 13px;
+  font-weight: 400;
+  color: #2E2E2E;
+  line-height: 20px;
+}
+
+.custom_ul li::marker {
+  color: #F80012;
+  font-size: 25px !important;
+}
+
+/* custom ul end*/
 
 /* Counter section CSS Start  */
 
@@ -1036,6 +1139,61 @@ main {
 .icon_box img {
   width: 54px;
   height: 54px;
+}
+
+.white_icon_box img{
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+
+.white_icon_box{
+  background-color: #ffffff;
+  width: fit-content;
+  padding: 15px 24px;
+  border-radius: 5px;
+  transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+}
+
+.white_icon_box:hover{
+  background-color: #58A399;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.white_icon_box:hover .text_box p{
+  color: #ffffff !important;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+
+.white_icon_box .text_box{
+  border-left: 1px solid #F80012;
+  margin-left: 15px;
+  padding-left: 15px;
+}
+
+.white_icon_box img{
+  transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+}
+
+.white_icon_box .icon_black {
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+
+.white_icon_box .icon_white {
+  display: none;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+
+.white_icon_box:hover .icon_white{
+  display: block;
+}
+
+.white_icon_box:hover .icon_black{
+  display: none;
 }
 
 .journey_sec {
