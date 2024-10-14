@@ -803,14 +803,19 @@
     </footer>
     <!-- Footer section end  -->
 
-    
-
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="js/jquery-3.2.1.min.js"></script>
-      <script src="js/popper.min.js" ></script> 
-      <script src="js/bootstrap.min.js" ></script>
+    <script src="js/popper.min.js" ></script> 
+    <script src="js/bootstrap.min.js" ></script>      
+    
 
+    <!-- owl carousel -->
+    <script src="owl/owl.carousel.min.js"></script>
+    <script src="owl/owl_js.js"></script>
+    <!-- owl carousel -->
+
+    <script src="js/prime.js"></script>
 
     <!--loading effects-->
     <script src="js/aos.js"></script>
@@ -823,184 +828,15 @@
     </script>
     <!--loading effects-->
 
-    <!-- gallery slider js  -->
-     <script>
-      window.onload = function() {
-      const photobanner = document.querySelector('.photobanner');
-      
-      // Duplicate all the images in the banner
-      const images = photobanner.innerHTML;
-      photobanner.innerHTML += images; // Clone the image set by appending it
-      
-      // Ensure the animation duration is dynamic based on the number of images
-      const imageCount = document.querySelectorAll('.photobanner img').length / 2; // Get the initial number of images
-      const duration = imageCount * 10; // Adjust the speed dynamically (10s per image)
-      
-      photobanner.style.animationDuration = `${duration}s`;
-    };
-
-
-     </script>
-    <!-- gallery slider js  -->
-
-    <!-- owl carousel -->
-    <script src="owl/owl.carousel.min.js"></script>
-    <script src="owl/owl_js.js"></script>
-    <!-- owl carousel -->
-
-    <script>
-      const prevIcon = '<img src = "images/arrow-left.svg" alt:"left" class="owl_nav"> ';
-      const nextIcon = '<img src = "images/arrow-right.svg" alt:"right" class="owl_nav">  ';
-      
-
-      $('.grid_slider').owlCarousel({
-        loop:true,
-        margin:20,
-        nav:false,
-        dots: true,
-
-        navText: [
-          prevIcon,
-          nextIcon
-        ],
-
-        responsive:{ 0: { items: 1, }, 400: { items: 1, }, 740: { items: 2, }, 992: { items: 2, }, 1025: { items: 3, }, 1280: {items: 3,} },
-
-        autoplay:true,
-        autoplayTimeout:4000,
-        autoplayHoverPause:true,
-        autoplaySpeed: 1000,
-
-        });
-
-      $('.portfolio_slider').owlCarousel({
-        loop:true,
-        margin:20,
-        nav:true,
-        dots: false,
-
-        navText: [
-          prevIcon,
-          nextIcon
-        ],
-
-        responsive:{ 0: { items: 1, }, 400: { items: 1, }, 740: { items: 2, }, 992: { items: 3, }, 1025: { items: 2, }, 1280: {items: 2,} },
-
-        autoplay:true,
-        autoplayTimeout:4000,
-        autoplayHoverPause:true,
-        autoplaySpeed: 1000,
-
-        });
-
-      $('.awards_slider').owlCarousel({
-        loop:true,
-        margin:20,
-        nav:false,
-        dots: false,
-
-        navText: [
-          prevIcon,
-          nextIcon
-        ],
-
-        responsive:{ 0: { items: 1, }, 400: { items: 2, }, 740: { items: 3, }, 992: { items: 3, }, 1025: { items: 4, }, 1280: {items: 5,} },
-
-        autoplay:true,
-        autoplayTimeout:4000,
-        autoplayHoverPause:true,
-        autoplaySpeed: 1000,
-
-        });
-
-        $('.play').on('click',function(){
-            owl.trigger('play.owl.autoplay',[1000])
-        })
-        $('.stop').on('click',function(){
-            owl.trigger('stop.owl.autoplay')
-        })
-
-
-      $('.about_awards_slider').owlCarousel({
-        loop:true,
-        margin:20,
-        nav:false,
-        dots: true,
-
-        navText: [
-          prevIcon,
-          nextIcon
-        ],
-
-        responsive:{ 0: { items: 1, }, 400: { items: 1, }, 740: { items: 1, }, 992: { items: 1, }, 1025: { items: 1, }, 1280: {items: 1,} },
-
-        autoplay:true,
-        autoplayTimeout:4000,
-        autoplayHoverPause:true,
-        autoplaySpeed: 1000,
-
-        });
-
-        $('.play').on('click',function(){
-            owl.trigger('play.owl.autoplay',[1000])
-        })
-        $('.stop').on('click',function(){
-            owl.trigger('stop.owl.autoplay')
-        })
-
-    </script>
-
-
     <!-- scroll top -->
+    
     <script type="module">
       import ScrollTop from 'https://cdn.skypack.dev/smooth-scroll-top';
       const scrollTop = new ScrollTop();
       scrollTop.init();
-        </script>
-    <!-- scroll top -->
-     
-    <!-- Collapse JS  -->
-     <script>
-      $('#collapseExample').on('show.bs.collapse', function () {
-          $('.footer_collapse i').removeClass('fa-plus').addClass('fa-minus');
-      });
-
-      $('#collapseExample').on('hide.bs.collapse', function () {
-          $('.footer_collapse i').removeClass('fa-minus').addClass('fa-plus');
-      });
-
-     </script>
-    <!-- Collapse JS  -->
-
-    <script>
-      $('.nav_toggler').click(function() {
-      $(this).toggleClass('active');
-      $('.nav_toggler_overlay').toggleClass('open');
-      
-      // Prevent or enable page scrolling
-      if ($('.nav_toggler_overlay').hasClass('open')) {
-          $('body').addClass('no-scroll');
-      } else {
-          $('body').removeClass('no-scroll');
-      }
-      });
-      </script>
-    
-    <!-- anuradha js -->
-    
-    <script>
-      $(".custom-carousel").owlCarousel({
-        autoWidth: true,
-        loop: true
-      });
-      $(document).ready(function () {
-        $(".custom-carousel .item").click(function () {
-          $(".custom-carousel .item").not($(this)).removeClass("active");
-          $(this).toggleClass("active");
-        });
-      });
     </script>
 
+   <!-- scroll top -->
 
   </body>
 </html>
