@@ -451,6 +451,20 @@ hr {
 
 /* side tabs start */
 
+.side_tabs .nav-link{
+  font-size: 13px;
+  text-wrap: nowrap;
+  width: 100%;
+  color: #2E2E2E !important;
+  
+}
+
+.side_tabs .nav-link.active,
+.nav-pills .show>.nav-link{
+  background-color: #75A47F;
+  color: #ffffff !important;
+  border-radius: 0;
+}
 
 
 /* side tabs end */
