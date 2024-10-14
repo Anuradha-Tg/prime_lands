@@ -95,6 +95,12 @@ hr {
   color: #F80012;
 }
 
+.green_text{
+  color: #19502E;
+  font-size: 13px;
+  font-weight: 700;
+}
+
 .semi_bold{
   font-weight: 500;
 }
@@ -179,6 +185,11 @@ hr {
 
 .light_green_bg_round {
   background-color: #58A399;
+  border-bottom-left-radius: 150px;
+}
+
+.home_white_bg{
+  background-color: #F9F9F9;
   border-bottom-left-radius: 150px;
 }
 
@@ -494,7 +505,8 @@ hr {
 
 .overlay_cards .card-img-overlay {
   opacity: 0;
-  transition: opacity 0.5s ease;
+  transform: translateY(20px); /* Move it down initially */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Add transition for transform */
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
   display: flex;
   flex-direction: column;
@@ -504,7 +516,9 @@ hr {
 
 .overlay_cards .card:hover .card-img-overlay {
   opacity: 1;
+  transform: translateY(0); /* Move into view */
 }
+
 
 .main_cat_cards .card {
   height: 280px;
@@ -809,11 +823,26 @@ main {
   width: auto;
   height: auto;
   padding: 12px 20px;
+  background-color: #ffffff;
 }
 
 .box_tabs .nav-tabs .nav-link.active {
   background-color: #638889;
   color: #ffffff;
+}
+
+.listing_sec{
+  padding-top: 55px;
+  padding-bottom: 238px;
+  background-size: cover; 
+  background-position: bottom; 
+  background-repeat: no-repeat;
+}
+
+.home_listing_tabs{
+  margin-top: -275px;
+  position: relative;
+  z-index: 999;
 }
 
 .medium_icon {
@@ -868,7 +897,7 @@ main {
 
 .cal_btn {
   background-color: #F80012;
-  z-index: 999;
+  z-index: 9999;
   position: fixed;
   right: 0;
   top: 380px;
@@ -1737,6 +1766,32 @@ main {
 .inner_listing .row_tabs.box_tabs .nav-tabs .nav-link{
   width: 200px;
   font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.apartment_tag{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 6px;
+  border-radius: 4px;
+  width: fit-content;
+  top: 12px;
+  right: 12px;
+  background-color: #006415;
+}
+
+.news_title_sec{
+  padding-bottom: 150px;
+}
+
+.latest_news_card{
+  margin-top: -180px;
+}
+
+.line_vector{
+  top: -140px;
+  right: 500px;
 }
 
 /***************************************************************************************/
@@ -1754,7 +1809,7 @@ main {
   padding-top: 48px;
   padding-bottom: 48px;
   background-color: #242424;
-  color: #ffffff;
+  color: #ADADAD;
 }
 
 .footer_logo {
@@ -1769,6 +1824,7 @@ main {
   justify-content: center;
   background-color: #496989;
   border-radius: 3px;
+  color: #ffffff;
 }
 
 .footer_social_links a:hover {
@@ -1777,6 +1833,7 @@ main {
 
 .social_icon:hover {
   background-color: #555555;
+  color: #85E5C3;
 }
 
 .social_icon a {
@@ -1784,11 +1841,11 @@ main {
 }
 
 .footer_collapse {
-  color: #ffffff !important;
+  color: #ADADAD !important;
 }
 
 .footer_sec a {
-  color: #ffffff;
+  color: #ADADAD;
   font-size: 13px;
   transition: 0.4s ease;
   margin-bottom: 8px;
@@ -1841,14 +1898,52 @@ main {
 /*========================================================================*/
 /*========================================================================*/
 
-.listing_sec {
-  position: relative;
-  /* Ensure the element can use positioning if needed */
-  background-image: url('../images/home_dark_bg.png'), url('../images/white_home_bg.png');
-  background-position: top, bottom right;
-  /* Control positioning of each background */
-  background-size: cover, contain;
-  /* Define size for each background */
-  background-repeat: no-repeat, no-repeat;
-  /* Prevent background images from repeating */
+/* New Gallery CSS Start  */
+.gallery-image {
+  padding-bottom: 2.35em;
+  animation: marqueeTop 15s linear infinite;
+  will-change: transform; 
 }
+
+.gallery-h--tb .gallery-image {
+  animation: marqueeBottom 20s linear infinite;
+  will-change: transform; 
+}
+
+.gallery-image__img {
+  padding-top: 30px;
+}
+
+.gallery-image__img img{
+  border-radius: 10px;
+  transition: 0.4s ease;
+}
+
+.gallery-h {
+  overflow: hidden;
+  height: 600px; 
+  position: relative; 
+}
+
+
+@keyframes marqueeTop {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+}
+@keyframes marqueeBottom {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+/* New Gallery CSS End  */
