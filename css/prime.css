@@ -449,6 +449,12 @@ hr {
 
 /* arrow tab end */
 
+/* side tabs start */
+
+
+
+/* side tabs end */
+
 /* custom ul start*/
 
 .custom_ul li{
@@ -1809,7 +1815,11 @@ main {
   padding-top: 48px;
   padding-bottom: 48px;
   background-color: #242424;
-  color: #ADADAD;
+  color: #ADADAD !important;
+}
+
+.footer_sec p{
+  color: #ADADAD !important;
 }
 
 .footer_logo {
