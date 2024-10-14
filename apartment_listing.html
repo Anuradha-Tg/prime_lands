@@ -2729,7 +2729,7 @@
       const nextIcon = '<img src = "images/arrow-right.svg" alt:"right" class="owl_nav">  ';
       
 
-      $('.listing_slider').owlCarousel({
+      $('.grid_slider').owlCarousel({
         loop:true,
         margin:20,
         nav:false,
@@ -2796,6 +2796,34 @@
             owl.trigger('stop.owl.autoplay')
         })
 
+
+      $('.about_awards_slider').owlCarousel({
+        loop:true,
+        margin:20,
+        nav:false,
+        dots: true,
+
+        navText: [
+          prevIcon,
+          nextIcon
+        ],
+
+        responsive:{ 0: { items: 1, }, 400: { items: 1, }, 740: { items: 1, }, 992: { items: 1, }, 1025: { items: 1, }, 1280: {items: 1,} },
+
+        autoplay:true,
+        autoplayTimeout:4000,
+        autoplayHoverPause:true,
+        autoplaySpeed: 1000,
+
+        });
+
+        $('.play').on('click',function(){
+            owl.trigger('play.owl.autoplay',[1000])
+        })
+        $('.stop').on('click',function(){
+            owl.trigger('stop.owl.autoplay')
+        })
+
     </script>
 
 
@@ -2831,8 +2859,8 @@
       } else {
           $('body').removeClass('no-scroll');
       }
-    });
-    </script>
+      });
+      </script>
 
     <!-- anuradha js -->
 

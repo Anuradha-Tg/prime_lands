@@ -1043,7 +1043,7 @@
       const nextIcon = '<img src = "images/arrow-right.svg" alt:"right" class="owl_nav">  ';
       
 
-      $('.listing_slider').owlCarousel({
+      $('.grid_slider').owlCarousel({
         loop:true,
         margin:20,
         nav:false,
@@ -1095,6 +1095,34 @@
         ],
 
         responsive:{ 0: { items: 1, }, 400: { items: 2, }, 740: { items: 3, }, 992: { items: 3, }, 1025: { items: 4, }, 1280: {items: 5,} },
+
+        autoplay:true,
+        autoplayTimeout:4000,
+        autoplayHoverPause:true,
+        autoplaySpeed: 1000,
+
+        });
+
+        $('.play').on('click',function(){
+            owl.trigger('play.owl.autoplay',[1000])
+        })
+        $('.stop').on('click',function(){
+            owl.trigger('stop.owl.autoplay')
+        })
+
+
+      $('.about_awards_slider').owlCarousel({
+        loop:true,
+        margin:20,
+        nav:false,
+        dots: true,
+
+        navText: [
+          prevIcon,
+          nextIcon
+        ],
+
+        responsive:{ 0: { items: 1, }, 400: { items: 1, }, 740: { items: 1, }, 992: { items: 1, }, 1025: { items: 1, }, 1280: {items: 1,} },
 
         autoplay:true,
         autoplayTimeout:4000,
