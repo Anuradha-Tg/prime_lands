@@ -651,43 +651,90 @@
     <div class="clearfix"></div>
 
     <!-- floor plans start -->
-     <div class="container-fluid">
-      <div class="container p-5 d-flex align-items-start">
-        <ul class="nav nav-pills flex-column nav-pills border-end border-3 me-3 align-items-end side_tabs" id="pills-tab"
+     <div class="container-fluid mt-5 py-5 bottom_bg" style="background-image: url(images/white_half_bg.png);">
+
+      <div class="row text-center mb-4">
+          <h1 class="none_before">Floor Plans</h1>
+      </div>
+
+      <div class="container d-flex align-items-start">
+        <ul class="nav nav-pills flex-column nav-pills border-end border-1 me-3 side_tabs mt-4" id="pills-tab"
           role="tablist">
           <li class="nav-item" role="presentation">
             <button class="nav-link text-primary fw-semibold active position-relative" id="pills-home-tab1"
               data-bs-toggle="pill" data-bs-target="#pills-home1" type="button" role="tab" aria-controls="pills-home1"
-              aria-selected="true">Home</button>
+              aria-selected="true">1BR Nexus - Ground Floor Plan</button>
           </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link text-primary fw-semibold position-relative" id="pills-profile-tab1" data-bs-toggle="pill"
               data-bs-target="#pills-profile1" type="button" role="tab" aria-controls="pills-profile1"
-              aria-selected="false">Profile</button>
+              aria-selected="false">2BR Oasis - Ground Floor Plan</button>
           </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link text-primary fw-semibold position-relative" id="pills-contact-tab1" data-bs-toggle="pill"
               data-bs-target="#pills-contact1" type="button" role="tab" aria-controls="pills-contact1"
-              aria-selected="false">Contact</button>
+              aria-selected="false">2BR Oasis - Ground Floor Plan</button>
           </li>
         </ul>
-        <div class="tab-content border rounded-3 border-primary p-3 text-danger w-100" id="pills-tabContent">
+
+        <div class="tab-content p-3 pt-0 w-100" id="pills-tabContent">
+
           <div class="tab-pane fade show active" id="pills-home1" role="tabpanel" aria-labelledby="pills-home-tab1">
-            <h2>Home</h2>
-            <p>Please check our more design @ <a target="_blank" href="https://codepen.io/Gaurav-Rana-the-reactor">Codepen</a>
-            </p>
+            <ul class="nav nav-pills mb-3 border-bottom border-2 arrow_tab " id="custom-pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active position-relative" id="custom-pills-location-tab" data-bs-toggle="pill"
+                  data-bs-target="#custom-pills-location" type="button" role="tab" aria-controls="custom-pills-location"
+                  aria-selected="true">1BR Nexus - Ground Floor Plan</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link position-relative" id="custom-pills-roadmap-tab" data-bs-toggle="pill"
+                  data-bs-target="#custom-pills-roadmap" type="button" role="tab" aria-controls="custom-pills-roadmap"
+                  aria-selected="false">1BR Nexus - Typical ( 1st & 2nd ) Floor Plan</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link position-relative" id="custom-pills-tour-tab" data-bs-toggle="pill"
+                  data-bs-target="#custom-pills-tour" type="button" role="tab" aria-controls="custom-pills-tour"
+                  aria-selected="false">1BR Nexus - Roof Terrace Plan</button>
+              </li>
+
+              
+            </ul>
+            <div class="tab-content p-3" id="custom-pills-tabContent">
+              <div class="tab-pane fade show active" id="custom-pills-location" role="tabpanel"
+                aria-labelledby="custom-pills-location-tab">
+                <img src="images/floorplan1.jpg" alt="" class="w-100 responsive">
+              </div>
+            
+              <!-- ==================== -->
+            
+              <div class="tab-pane fade" id="custom-pills-roadmap" role="tabpanel" aria-labelledby="custom-pills-roadmap-tab">
+                <img src="images/floorplan2.jpg" alt="" class="w-100 responsive">
+              </div>
+            
+              <!-- =================== -->
+            
+              <div class="tab-pane fade" id="custom-pills-tour" role="tabpanel" aria-labelledby="custom-pills-tour-tab">
+                <img src="images/floorplan3.jpg" alt="" class="w-100 responsive">
+              </div>
+            </div>
           </div>
+          
+          <!-- ==================================== -->
+          <!-- ==================================== -->
+
           <div class="tab-pane fade" id="pills-profile1" role="tabpanel" aria-labelledby="pills-profile-tab1">
-            <h2>Profile</h2>
-            <p>Please check our more design @ <a target="_blank" href="https://codepen.io/Gaurav-Rana-the-reactor">Codepen</a>
-            </p>
+            
           </div>
+          
+          <!-- ==================================== -->
+          <!-- ==================================== -->
+
           <div class="tab-pane fade" id="pills-contact1" role="tabpanel" aria-labelledby="pills-contact-tab1">
-            <h2>Contact</h2>
-            <p>Please check our more design @ <a target="_blank" href="https://codepen.io/Gaurav-Rana-the-reactor">Codepen</a>
-            </p>
+            
           </div>
+          
         </div>
+
       </div>
      </div>
     <!-- floor plans end -->
