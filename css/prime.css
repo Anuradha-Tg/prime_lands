@@ -442,8 +442,6 @@ hr {
   right: -10px;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-
-  border-left: 10px solid #f90;
   display: block;
   width: 0;
 }
@@ -465,6 +463,10 @@ hr {
   background-color: #75A47F;
   color: #ffffff !important;
   border-radius: 0;
+}
+
+.side_tabs .nav-link{
+  position: relative;
 }
 
 
