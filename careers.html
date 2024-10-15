@@ -1,0 +1,612 @@
+
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="description" content=""/>
+    <link rel="canonical" href="" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta name="og:image" content=""/>
+    <meta name="twitter:card" content="" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:title" content="" />
+
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/prime.css" rel="stylesheet">
+    <link href="css/mediaquery.css" rel="stylesheet">
+    <!-- Custom CSS -->
+
+    <title>Prime Lands</title>
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <!--favicon-->
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Add icon library -->
+
+    <!-- owl carousel -->
+    <link href="owl/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="owl/owl_css.css">
+    <!-- owl carousel -->
+
+    <!--loading effect-->
+    <link rel="stylesheet" href="css/loading_styles.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="css/aos.css" type="text/css" media="screen"/>
+    <!--loading effect-->
+
+    <!--scroll bar style-->
+    <style>
+
+      ::-webkit-scrollbar {
+        background: #000000;
+        height: 5px;
+        width: 5px;
+      }
+
+      ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 2px #73A9AD;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #73A9AD;
+        border-radius: 2px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #73A9AD; 
+      }
+    </style>
+    <!--scroll bar style-->
+
+
+  </head>
+  <body>
+
+    <a href="#">
+      <div class="cal_btn text-center">
+        <img src="images/calculator.png" alt="Calculator Icon">
+        <span class="button-text">Loan Calculator</span>
+      </div>
+    </a>
+    
+    <!-- Calculator float button End -->
+
+    <!-- Header menu start  -->
+    <main>
+      <div class="container-fluid main_navbar">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <a class="navbar-brand" href="index.html">
+              <img src="images/logo.png" alt="" class="top_logo">
+            </a>
+          </div>
+          <div>
+            <div class="d-flex gap-2 align-items-center">
+              <div class="d-lg-block d-none">
+                <div class="d-flex gap-1">
+                  <div class="nav_item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </div>
+                  <div class="nav_item">
+                    <a class="nav-link" aria-current="page" href="#">Lands</a>
+                  </div>
+                  <div class="nav_item">
+                    <a class="nav-link" aria-current="page" href="#">Houses</a>
+                  </div>
+                  <div class="nav_item">
+                    <a class="nav-link" aria-current="page" href="#">Apartments</a>
+                  </div>
+                  <div class="nav_item">
+                    <a class="nav-link" aria-current="page" href="#">Contact Us</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Desktop visible menu  -->
+              <div class="toggle_menu d-lg-block d-none">
+                <div class="button_container nav_toggler" id="toggle"><span class="top"></span></span><span class="bottom"></span></div>
+                <div class="overlay nav_toggler_overlay" id="overlay">
+                    <nav class="overlay-menu">
+                      <div class="row w-100 align-items-center">
+                        <div class="col-lg-6 col-md-6">
+                          <ul>
+                            <li><a href="#">Lands</a></li>
+                            <li><a href="#">Houses</a></li>
+                            <li><a href="#">Portfolio Properties</a></li>
+                            <li ><a href="#">Apartments</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Sell Your Land</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                          <ul>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li ><a href="#">News</a></li>
+                            <li><a href="#">Online Publications</a></li>
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">Virtual Tour</a></li>
+                            <li><a href="#">KYC</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </nav>
+                </div>
+              </div>
+              <!-- Desktop visible menu  -->
+              
+
+              <div class="header_lang text-dark ms-sm-3 ms-2" style="width: fit-content;">
+                <a href="#">සිං</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="#">தமி</a>
+              </div>
+
+              <!-- Mobile visible menu  -->
+              <div class="toggle_menu d-lg-none">
+                <div class="button_container nav_toggler" id="toggle"><span class="top"></span></span><span class="bottom"></span></div>
+                <div class="overlay nav_toggler_overlay" id="overlay">
+                    <nav class="overlay-menu">
+                      <div class="row w-100 align-items-center">
+                        <div class="col-lg-6 col-md-6">
+                          <ul>
+                            <li><a href="#">Lands</a></li>
+                            <li><a href="#">Houses</a></li>
+                            <li><a href="#">Portfolio Properties</a></li>
+                            <li ><a href="#">Apartments</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Sell Your Land</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                          <ul>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li ><a href="#">News</a></li>
+                            <li><a href="#">Online Publications</a></li>
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">Virtual Tour</a></li>
+                            <li><a href="#">KYC</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </nav>
+                </div>
+              </div>
+              <!-- Mobile visible menu  -->
+
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+    </main>
+    <!-- Header menu end  -->
+
+    <!-- Inner Banner Start  -->
+    <div class="container-fluid inner_slider main_slider p-0 position-relative">
+      <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active" style="background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/inner_banner.jpg);">
+            <div class="carousel-caption">
+              <div class="row justify-content-center">
+                <div class="col-lg-6">
+                  <h1>Careers</h1>
+                  <p class="text-white">Everyone aspires to own a great piece of property. We, at Prime Lands, made it our aim to make this dream a reality. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Inner Banner End  -->
+
+    <div class="clearfix"></div>
+
+    <!-- Top section start  -->
+    <div class="container-fluid about_sec position-relative mb-3" style="background-image:url(images/inner_green_bg.png); background-position: bottom;">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-8 col-12">
+            <h1 class="text-white pb-3 aos-init aos-animate" data-aos="fade-up">General Vacancy</h1>
+            <p class="text-white aos-init aos-animate" data-aos="fade-down">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+            </p>
+            <div class="d-flex mt-3">
+              <button type="button" class="btn custom_btn shadow-none light_btn">
+                Upload Your CV
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <a href="">
+              <div class="white_icon_box d-flex align-items-center w-100 mb-3">
+                <img src="images/hotline_black.png" alt="" class="medium_icon icon_black">
+                <img src="images/hotline_white.png" alt="" class="medium_icon icon_white">
+            
+                <div class="text_box">
+                  <p class="mb-1 fw-bold">
+                    Hotline Numbers
+                  </p>
+                  <p class="mb-0">
+                    +94 112 030 890
+                  </p>
+                </div>
+              </div>
+            </a>
+
+            <a href="">
+              <div class="white_icon_box d-flex align-items-center w-100">
+                <img src="images/email_dark.png" alt="" class="medium_icon icon_black">
+                <img src="images/email_white.png" alt="" class="medium_icon icon_white">
+              
+                <div class="text_box">
+                  <p class="mb-1 fw-bold">
+                    Email
+                  </p>
+                  <p class="mb-0">
+                    info@primelands.lk
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Top section end  -->
+
+    
+    <!-- Career opportunities start   -->
+    <div class="container py-5">
+      <h1 class="mb-4">Explore careers opportunities at Prime Lands</h1>
+      <div class="row pt-3">
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12 mb-4">
+          <div class="vacancy_card">
+            <p class="green_text">End Date: 2024-07-13</p>
+            <h5 class="mb-3">Customer Engagement Associate</h5>
+            <p class="p_line_3">Are you passionate about telesales? We are seeking talented individuals to join our exciting Sales Engagement...</p>
+            <div class="">
+              <button class="arrow_btn green" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                <span>Show More</span>
+                <svg width="15px" height="10px" viewBox="0 0 13 10">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12 mb-4">
+          <div class="vacancy_card">
+            <p class="green_text">End Date: 2024-07-13</p>
+            <h5 class="mb-3">Customer Engagement Associate</h5>
+            <p class="p_line_3">Are you passionate about telesales? We are seeking talented individuals to join our exciting Sales Engagement...</p>
+            <div class="">
+              <button class="arrow_btn green" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                <span>Show More</span>
+                <svg width="15px" height="10px" viewBox="0 0 13 10">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12 mb-4">
+          <div class="vacancy_card">
+            <p class="green_text">End Date: 2024-07-13</p>
+            <h5 class="mb-3">Customer Engagement Associate</h5>
+            <p class="p_line_3">Are you passionate about telesales? We are seeking talented individuals to join our exciting Sales Engagement...</p>
+            <div class="">
+              <button class="arrow_btn green" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                <span>Show More</span>
+                <svg width="15px" height="10px" viewBox="0 0 13 10">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12 mb-4">
+          <div class="vacancy_card">
+            <p class="green_text">End Date: 2024-07-13</p>
+            <h5 class="mb-3">Customer Engagement Associate</h5>
+            <p class="p_line_3">Are you passionate about telesales? We are seeking talented individuals to join our exciting Sales Engagement...</p>
+            <div class="">
+              <button class="arrow_btn green" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                <span>Show More</span>
+                <svg width="15px" height="10px" viewBox="0 0 13 10">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12 mb-4">
+          <div class="vacancy_card">
+            <p class="green_text">End Date: 2024-07-13</p>
+            <h5 class="mb-3">Customer Engagement Associate</h5>
+            <p class="p_line_3">Are you passionate about telesales? We are seeking talented individuals to join our exciting Sales Engagement...</p>
+            <div class="">
+              <button class="arrow_btn green" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                <span>Show More</span>
+                <svg width="15px" height="10px" viewBox="0 0 13 10">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12 mb-4">
+          <div class="vacancy_card">
+            <p class="green_text">End Date: 2024-07-13</p>
+            <h5 class="mb-3">Customer Engagement Associate</h5>
+            <p class="p_line_3">Are you passionate about telesales? We are seeking talented individuals to join our exciting Sales Engagement...</p>
+            <div class="">
+              <button class="arrow_btn green" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                <span>Show More</span>
+                <svg width="15px" height="10px" viewBox="0 0 13 10">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Pagination Start -->
+
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-end gap-2 site_pagination  mb-0 mt-4">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></span>
+            </a>
+          </li>
+          <li class="page-item disabled"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Pagination End -->
+    </div>
+    <!-- Career opportunities end   -->
+    
+    
+    <!-- Footer section start  -->
+    <div class="container-fluid py-5">
+      <h1 class="text-center mb-3 none_before">Our Subsidiaries</h1>
+      <p class="text-center">If you are looking for the ideal piece of land for sale to build your dream home or maybe even a built and ready house for sale<br>to start the next steps of your life, then Prime Lands is your best option when it comes to real estate companies in Sri Lanka!</p>
+      <div class="row mt-4">
+        <div class="slider">
+          <div class="owl-carousel awards_slider postion-relative">
+            <div class="slider-card">
+              <img src="images/subsidiaries_1.png" alt="">
+              <p class="text-center mb-0 pb-4">Associate Subsidiary of Prime Group</p>
+            </div>
+            <div class="slider-card">
+              <img src="images/subsidiaries_2.png" alt="">
+              <p class="text-center mb-0 pb-4">Ultra Luxury Condominium Development of Prime Group</p>
+            </div>
+            <div class="slider-card">
+              <img src="images/subsidiaries_3.png" alt="">
+              <p class="text-center mb-0 pb-4">Property arm of Prime Group in Dubai</p>
+            </div>
+            <div class="slider-card">
+              <img src="images/subsidiaries_4.png" alt="">
+              <p class="text-center mb-0 pb-4">The condominium property arm of Prime Group</p>
+            </div>
+            <div class="slider-card">
+              <img src="images/subsidiaries_5.png" alt="">
+              <p class="text-center mb-0 pb-4">Associate Subsidiary of Prime Group..</p>
+            </div>
+            <div class="slider-card">
+              <img src="images/subsidiaries_1.png" alt="">
+              <p class="text-center mb-0 pb-4">Associate Subsidiary of Prime Group..</p>
+            </div>
+            <div class="slider-card">
+              <img src="images/subsidiaries_2.png" alt="">
+              <p class="text-center mb-0 pb-4">Associate Subsidiary of Prime Group..</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container-fluid footer_sec">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+              <img src="images/white_logo.png" alt="" class="footer_logo">
+            </div>
+            <div>
+              <div class="text-start">
+                <p class="text-uppercase text-white mb-1">Follow us on:</p>
+                <div class="d-flex gap-2 footer_social_links">
+                  <a href=""><div class="social_icon"><i class="fa-brands fa-linkedin-in"></i></div></a>
+                  <a href=""><div class="social_icon"><i class="fa-brands fa-x-twitter"></i></div></a>
+                  <a href=""><div class="social_icon"><i class="fa-brands fa-instagram"></i></div></a>
+                  <a href=""><div class="social_icon"><i class="fa-brands fa-facebook-f"></i></div></a>
+                  <a href=""><div class="social_icon"><i class="fa-brands fa-youtube"></i></div></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <!-- Useful links section start  -->
+          <p class="mb-4">
+            <a class="footer_collapse ms-0" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              Popular Search<i class="ms-2 fa-solid fa-plus"></i>
+            </a>
+          </p>
+          <div class="collapse pb-3" id="collapseExample">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <p class="fw-bold">Lands</p>
+                <div class="d-flex flex-column">
+                  <a href="#">Colombo</a>
+                  <a href="#">Gampaha</a>
+                  <a href="#">Kandy</a>
+                  <a href="#">Nuwara Eliya</a>
+                  <a href="#">Panadura</a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <p class="fw-bold">Lands</p>
+                <div class="d-flex flex-column">
+                  <a href="#">Colombo</a>
+                  <a href="#">Gampaha</a>
+                  <a href="#">Kandy</a>
+                  <a href="#">Nuwara Eliya</a>
+                  <a href="#">Panadura</a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <p class="fw-bold">Lands</p>
+                <div class="d-flex flex-column">
+                  <a href="#">Colombo</a>
+                  <a href="#">Gampaha</a>
+                  <a href="#">Kandy</a>
+                  <a href="#">Nuwara Eliya</a>
+                  <a href="#">Panadura</a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <p class="fw-bold">Lands</p>
+                <div class="d-flex flex-column">
+                  <a href="#">Colombo</a>
+                  <a href="#">Gampaha</a>
+                  <a href="#">Kandy</a>
+                  <a href="#">Nuwara Eliya</a>
+                  <a href="#">Panadura</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Useful links section end  -->
+
+          <hr class="mb-4">
+
+          <div class="row footer_links">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+              <p class="fw-bold">About & Contact</p>
+              <div class="d-flex flex-column">
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Testimonials</a>
+                <a href="#">KYC</a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+              <p class="fw-bold">Property & Services</p>
+              <div class="d-flex flex-column">
+                <a href="#">Lands</a>
+                <a href="#">Houses</a>
+                <a href="#">Apartments</a>
+                <a href="#">Portfolio Properties</a>
+                <a href="#">Services</a>
+                <a href="#">Virtual Tour</a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+              <p class="fw-bold">News & Publications</p>
+              <div class="d-flex flex-column">
+                <a href="#">News</a>
+                <a href="#">Online Publications</a>
+                <a href="#">Blogs</a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+              <p class="fw-bold">Contact Details</p>
+              <div class="d-flex flex-column">
+                <p class="mb-0">Prime Lands (Pvt) Ltd</p>
+                <p class="mb-2">No.75, D.S. Senanayake Mawatha, Borella, Colombo-08, Sri Lanka</p>
+                <p class="mb-2"><a href="tel:+94112699822">+94 112 699 822</a></p>
+                <p class="mb-2"><a href="tel:+94112699822">+94 112 699 822</a></p>
+                <p class="mb-0"><a href="mailto:info@primelands.lk">info@primelands.lk</a></p>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <p class="fst-italic mb-0"><small>© 2024 Prime Lands. All rights reserved. Design & Developed by <a target="_blank" href="https://www.tekgeeks.net/">TekGeeks</a></small></p> 
+        </div>
+      </div>
+    </footer>
+    <!-- Footer section end  -->
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js" ></script> 
+    <script src="js/bootstrap.min.js" ></script>      
+    
+
+    <!-- owl carousel -->
+    <script src="owl/owl.carousel.min.js"></script>
+    <script src="owl/owl_js.js"></script>
+    <!-- owl carousel -->
+
+    <script src="js/prime.js"></script>
+
+    <!--loading effects-->
+    <script src="js/aos.js"></script>
+
+    <script>
+      AOS.init({
+      easing: 'ease-out-back',
+              duration: 1000
+      });
+    </script>
+    <!--loading effects-->
+
+    <!-- scroll top -->
+    
+    <script type="module">
+      import ScrollTop from 'https://cdn.skypack.dev/smooth-scroll-top';
+      const scrollTop = new ScrollTop();
+      scrollTop.init();
+    </script>
+
+   <!-- scroll top -->
+
+  </body>
+</html>
+
+
