@@ -44,6 +44,10 @@
     font-size: 22px;
   }
 
+  .mobile_tab_content_div>.tab-pane {
+    display: block;
+    opacity: 1;
+  }
 }
 
 /* Extra Small Devices, Phones */

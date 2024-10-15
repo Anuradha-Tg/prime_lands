@@ -52,10 +52,6 @@
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css'>
     <!-- swiper -->
 
-    <!-- Fancybox CSS -->
-    <link rel="stylesheet" href="gallery/fancybox.min.css">
-    <!-- Fancybox CSS -->
-
     <!--scroll bar style-->
     <style>
 
@@ -663,537 +659,195 @@
           <h1 class="none_before">Floor Plans</h1>
       </div>
 
-      <div class="container">
-        <div class="row">
-        
-          <div class="d-flex align-items-start">
+      <div class="container d-flex align-items-start">
+        <ul class="nav nav-pills flex-column nav-pills border-end border-1 me-3 side_tabs mt-4" id="pills-tab"
+          role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link text-primary fw-semibold active position-relative" id="pills-home-tab1"
+              data-bs-toggle="pill" data-bs-target="#pills-home1" type="button" role="tab" aria-controls="pills-home1"
+              aria-selected="true">1BR Nexus - Ground Floor Plan</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link text-primary fw-semibold position-relative" id="pills-profile-tab1" data-bs-toggle="pill"
+              data-bs-target="#pills-profile1" type="button" role="tab" aria-controls="pills-profile1"
+              aria-selected="false">2BR Oasis - Ground Floor Plan</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link text-primary fw-semibold position-relative" id="pills-contact-tab1" data-bs-toggle="pill"
+              data-bs-target="#pills-contact1" type="button" role="tab" aria-controls="pills-contact1"
+              aria-selected="false">2BR Oasis - Ground Floor Plan</button>
+          </li>
+        </ul>
 
-            <div class="nav flex-column nav-pills me-3 d-none d-lg-block side_tabs" id="v-pills-tab" role="tablist"
-              aria-orientation="vertical">
-              <button class="custom_side_nav nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
-                data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" 
-                aria-selected="true">1BR Nexus - Ground Floor Plan</button>
-              <button class="custom_side_nav nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
-                data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
-                aria-selected="false">2BR Oasis - Ground Floor Plan</button>
-              <button class="custom_side_nav nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
-                data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
-                aria-selected="false">2BR Oasis - Ground Floor Plan</button>
-              <button class="custom_side_nav nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
-                data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
-                aria-selected="false">3BR Suites - Ground Floor Plan</button>
-              <button class="custom_side_nav nav-link" id="v-pills-history-tab" data-bs-toggle="pill"
-                data-bs-target="#v-pills-history" type="button" role="tab" aria-controls="v-pills-history"
-                aria-selected="false">Master Plan</button>
-            </div>
+        <div class="tab-content p-3 pt-0 w-100" id="pills-tabContent">
 
-            <div class="tab-content mobile_tab_content_div tab_bg_white mb-4 w-100" id="v-pills-tabContent">
-        
-              <div class="tab-pane fade active show" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-        
-                <h2 class="accordion-header d-lg-none" id="rel_01">
-                  <button class="accordion-button mobile_tab_accor_btn collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#rel_coll_01" aria-expanded="false" aria-controls="rel_coll_01">1BR Nexus - Ground Floor Plan</button>
-                </h2>
+          <div class="tab-pane fade show active" id="pills-home1" role="tabpanel" aria-labelledby="pills-home-tab1">
+            <ul class="nav nav-pills mb-3 border-bottom border-2 arrow_tab " id="custom-pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active position-relative" id="custom-pills-location-tab" data-bs-toggle="pill"
+                  data-bs-target="#custom-pills-location" type="button" role="tab" aria-controls="custom-pills-location"
+                  aria-selected="true">1BR Nexus - Ground Floor Plan</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link position-relative" id="custom-pills-roadmap-tab" data-bs-toggle="pill"
+                  data-bs-target="#custom-pills-roadmap" type="button" role="tab" aria-controls="custom-pills-roadmap"
+                  aria-selected="false">1BR Nexus - Typical ( 1st & 2nd ) Floor Plan</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link position-relative" id="custom-pills-tour-tab" data-bs-toggle="pill"
+                  data-bs-target="#custom-pills-tour" type="button" role="tab" aria-controls="custom-pills-tour"
+                  aria-selected="false">1BR Nexus - Roof Terrace Plan</button>
+              </li>
+            </ul>
+            <div class="tab-content p-3" id="custom-pills-tabContent">
+              <div class="tab-pane fade show active" id="custom-pills-location" role="tabpanel"
+                aria-labelledby="custom-pills-location-tab">
+                <img src="images/floorplan1.jpg" alt="" class="w-100 responsive">
 
-                <div id="rel_coll_01" class="accordion-collapse d-lg-block collapse" aria-labelledby="rel_01"
-                  data-bs-parent="#v-pills-tabContent">
-        
-                  <ul class="nav nav-pills mb-3 border-bottom border-2 arrow_tab " id="custom-pills-tab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link active position-relative" id="custom-pills-location-tab" data-bs-toggle="pill"
-                        data-bs-target="#custom-pills-location" type="button" role="tab" aria-controls="custom-pills-location"
-                        aria-selected="true">1BR Nexus - Ground Floor Plan</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link position-relative" id="custom-pills-roadmap-tab" data-bs-toggle="pill"
-                        data-bs-target="#custom-pills-roadmap" type="button" role="tab" aria-controls="custom-pills-roadmap"
-                        aria-selected="false">1BR Nexus - Typical ( 1st & 2nd ) Floor Plan</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link position-relative" id="custom-pills-tour-tab" data-bs-toggle="pill"
-                        data-bs-target="#custom-pills-tour" type="button" role="tab" aria-controls="custom-pills-tour"
-                        aria-selected="false">1BR Nexus - Roof Terrace Plan</button>
-                    </li>
-                  </ul>
-                  <div class="tab-content p-3" id="custom-pills-tabContent">
-                    <div class="tab-pane fade show active" id="custom-pills-location" role="tabpanel"
-                      aria-labelledby="custom-pills-location-tab">
+                <div class="row mt-4">
 
-                      <a href="images/floorplan1.jpg" class="mb-4 col-12 col-sm-6 col-md-4 img-fluid mb-3" data-fancybox="images" data-caption="">
-                        <img class="d-block w-100 responsive" src="images/floorplan1.jpg" alt="">
-                      </a>
-                  
-                      <div class="row mt-4">
-                  
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                          <div>
-                            <p class="mb-0 d-flex align-items-center">
-                              <span><img src="images/bedroom.png" class="small_icon" alt=""></span>
-                              Rooms : &nbsp; <span><b>3</b></span>
-                            </p>
-                          </div>
-                        </div>
-                  
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                          <div>
-                            <p class="mb-0 d-flex align-items-center">
-                              <span><img src="images/bathroom.png" class="small_icon" alt=""></span>
-                              Bath Rooms : &nbsp; <span><b>2</b></span>
-                            </p>
-                          </div>
-                        </div>
-                  
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                          <div>
-                            <p class="mb-0 d-flex align-items-center">
-                              <span><img src="images/garage.png" class="small_icon" alt=""></span>
-                              Garage : &nbsp; <span><b>1</b></span>
-                            </p>
-                          </div>
-                        </div>
-                  
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                          <div>
-                            <p class="mb-0 d-flex align-items-center">
-                              <span><img src="images/size.png" class="small_icon" alt=""></span>
-                              Size : &nbsp; <span><b>3326 Sq Ft</b></span>
-                            </p>
-                          </div>
-                        </div>
-                  
-                      </div>
-                    </div>
-                  
-                    <!-- ==================== -->
-                  
-                    <div class="tab-pane fade" id="custom-pills-roadmap" role="tabpanel" aria-labelledby="custom-pills-roadmap-tab">
-                      <a href="images/floorplan2.jpg" class="mb-4 col-12 col-sm-6 col-md-4 img-fluid mb-3" data-fancybox="images"
-                        data-caption="">
-                        <img class="d-block w-100 responsive" src="images/floorplan2.jpg" alt="">
-                      </a>
-
-                      <div class="row mt-4">
-                      
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                          <div>
-                            <p class="mb-0 d-flex align-items-center">
-                              <span><img src="images/bedroom.png" class="small_icon" alt=""></span>
-                              Rooms : &nbsp; <span><b>3</b></span>
-                            </p>
-                          </div>
-                        </div>
-                      
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                          <div>
-                            <p class="mb-0 d-flex align-items-center">
-                              <span><img src="images/bathroom.png" class="small_icon" alt=""></span>
-                              Bath Rooms : &nbsp; <span><b>2</b></span>
-                            </p>
-                          </div>
-                        </div>
-                      
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                          <div>
-                            <p class="mb-0 d-flex align-items-center">
-                              <span><img src="images/garage.png" class="small_icon" alt=""></span>
-                              Garage : &nbsp; <span><b>1</b></span>
-                            </p>
-                          </div>
-                        </div>
-                      
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                          <div>
-                            <p class="mb-0 d-flex align-items-center">
-                              <span><img src="images/size.png" class="small_icon" alt=""></span>
-                              Size : &nbsp; <span><b>3326 Sq Ft</b></span>
-                            </p>
-                          </div>
-                        </div>
-                      
-                      </div>
-
-                    </div>
-                  
-                    <!-- =================== -->
-                  
-                    <div class="tab-pane fade" id="custom-pills-tour" role="tabpanel" aria-labelledby="custom-pills-tour-tab">
-                      <a href="images/floorplan3.jpg" class="mb-4 col-12 col-sm-6 col-md-4 img-fluid mb-3" data-fancybox="images"
-                        data-caption="">
-                        <img class="d-block w-100 responsive" src="images/floorplan3.jpg" alt="">
-                      </a>
-
-                      <div class="row mt-4">
-                      
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                          <div>
-                            <p class="mb-0 d-flex align-items-center">
-                              <span><img src="images/bedroom.png" class="small_icon" alt=""></span>
-                              Rooms : &nbsp; <span><b>3</b></span>
-                            </p>
-                          </div>
-                        </div>
-                      
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                          <div>
-                            <p class="mb-0 d-flex align-items-center">
-                              <span><img src="images/bathroom.png" class="small_icon" alt=""></span>
-                              Bath Rooms : &nbsp; <span><b>2</b></span>
-                            </p>
-                          </div>
-                        </div>
-                      
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                          <div>
-                            <p class="mb-0 d-flex align-items-center">
-                              <span><img src="images/garage.png" class="small_icon" alt=""></span>
-                              Garage : &nbsp; <span><b>1</b></span>
-                            </p>
-                          </div>
-                        </div>
-                      
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                          <div>
-                            <p class="mb-0 d-flex align-items-center">
-                              <span><img src="images/size.png" class="small_icon" alt=""></span>
-                              Size : &nbsp; <span><b>3326 Sq Ft</b></span>
-                            </p>
-                          </div>
-                        </div>
-                      
-                      </div>
+                  <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                    <div>
+                      <p class="mb-0 d-flex align-items-center">
+                        <span><img src="images/bedroom.png" class="small_icon" alt=""></span>
+                        Rooms : &nbsp; <span><b>3</b></span>
+                      </p>
                     </div>
                   </div>
-                </div>
-
-              </div>
-        
-              <!-- ================= -->
-        
-              <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-        
-                <div id="rel_coll_02" class="accordion-collapse d-lg-block collapse" aria-labelledby="rel_02"
-                  data-bs-parent="#v-pills-tabContent">
-        
-                  <ul class="nav nav-pills mb-3 border-bottom border-2 arrow_tab " id="custom-pills-tab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link active position-relative" id="custom-pills-location-tab1" data-bs-toggle="pill"
-                        data-bs-target="#custom-pills-location1" type="button" role="tab" aria-controls="custom-pills-location1"
-                        aria-selected="true">1BR Nexus - Ground Floor Plan</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link position-relative" id="custom-pills-roadmap-tab1" data-bs-toggle="pill"
-                        data-bs-target="#custom-pills-roadmap1" type="button" role="tab" aria-controls="custom-pills-roadmap1"
-                        aria-selected="false">1BR Nexus - Typical (1st & 2nd) Floor Plan</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link position-relative" id="custom-pills-tour-tab1" data-bs-toggle="pill"
-                        data-bs-target="#custom-pills-tour1" type="button" role="tab" aria-controls="custom-pills-tour1"
-                        aria-selected="false">1BR Nexus - Roof Terrace Plan</button>
-                    </li>
-                  </ul>
-                  
-                  <div class="tab-content p-3" id="custom-pills-tabContent">
-                    <div class="tab-pane fade show active" id="custom-pills-location1" role="tabpanel"
-                      aria-labelledby="custom-pills-location-tab1">
-                      <a href="images/floorplan1.jpg" class="mb-4 col-12 col-sm-6 col-md-4 img-fluid mb-3" data-fancybox="images"
-                        data-caption="">
-                        <img class="d-block w-100 responsive" src="images/floorplan1.jpg" alt="">
-                      </a>
-                  
-                      <div class="row mt-4">
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                          <div>
-                            <p class="mb-0 d-flex align-items-center">
-                              <span><img src="images/bedroom.png" class="small_icon" alt=""></span>
-                              Rooms : &nbsp; <span><b>3</b></span>
-                            </p>
-                          </div>
-                        </div>
-                  
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                          <div>
-                            <p class="mb-0 d-flex align-items-center">
-                              <span><img src="images/bathroom.png" class="small_icon" alt=""></span>
-                              Bath Rooms : &nbsp; <span><b>2</b></span>
-                            </p>
-                          </div>
-                        </div>
-                  
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                          <div>
-                            <p class="mb-0 d-flex align-items-center">
-                              <span><img src="images/garage.png" class="small_icon" alt=""></span>
-                              Garage : &nbsp; <span><b>1</b></span>
-                            </p>
-                          </div>
-                        </div>
-                  
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                          <div>
-                            <p class="mb-0 d-flex align-items-center">
-                              <span><img src="images/size.png" class="small_icon" alt=""></span>
-                              Size : &nbsp; <span><b>3326 Sq Ft</b></span>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  
-                    <!-- ==================== -->
-                  
-                    <div class="tab-pane fade" id="custom-pills-roadmap1" role="tabpanel" aria-labelledby="custom-pills-roadmap-tab1">
-                      <a href="images/floorplan2.jpg" class="mb-4 col-12 col-sm-6 col-md-4 img-fluid mb-3" data-fancybox="images"
-                        data-caption="">
-                        <img class="d-block w-100 responsive" src="images/floorplan2.jpg" alt="">
-                      </a>
-                    </div>
-                  
-                    <!-- =================== -->
-                  
-                    <div class="tab-pane fade" id="custom-pills-tour1" role="tabpanel" aria-labelledby="custom-pills-tour-tab1">
-                      <a href="images/floorplan3.jpg" class="mb-4 col-12 col-sm-6 col-md-4 img-fluid mb-3" data-fancybox="images"
-                        data-caption="">
-                        <img class="d-block w-100 responsive" src="images/floorplan3.jpg" alt="">
-                      </a>
-                    </div>
-                  </div>
-
-                </div>
-        
-              </div>
-        
-              <!-- ================= -->
-        
-              <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-        
-                <h2 class="accordion-header d-lg-none" id="rel_03">
-                  <button class="accordion-button collapsed mobile_tab_accor_btn" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#rel_coll_03" aria-expanded="false" aria-controls="rel_coll_03">
-                    2BR Oasis - Ground Floor Plan
-                  </button>
-                </h2>
-                <div id="rel_coll_03" class="accordion-collapse collapse d-lg-block" aria-labelledby="rel_03"
-                  data-bs-parent="#v-pills-tabContent">
-                  
-                  <ul class="nav nav-pills mb-3 border-bottom border-2 arrow_tab " id="new-custom-pills-tab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link active position-relative" id="new-custom-pills-location-tab" data-bs-toggle="pill"
-                        data-bs-target="#new-custom-pills-location" type="button" role="tab" aria-controls="new-custom-pills-location"
-                        aria-selected="true">1BR Nexus - Ground Floor Plan</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link position-relative" id="new-custom-pills-roadmap-tab" data-bs-toggle="pill"
-                        data-bs-target="#new-custom-pills-roadmap" type="button" role="tab" aria-controls="new-custom-pills-roadmap"
-                        aria-selected="false">1BR Nexus - Typical (1st & 2nd) Floor Plan</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link position-relative" id="new-custom-pills-tour-tab" data-bs-toggle="pill"
-                        data-bs-target="#new-custom-pills-tour" type="button" role="tab" aria-controls="new-custom-pills-tour"
-                        aria-selected="false">1BR Nexus - Roof Terrace Plan</button>
-                    </li>
-                  </ul>
-                  
-                  <div class="tab-content p-3" id="new-custom-pills-tabContent">
-                    <div class="tab-pane fade show active" id="new-custom-pills-location" role="tabpanel"
-                      aria-labelledby="new-custom-pills-location-tab">
-                      <a href="images/floorplan1.jpg" class="mb-4 col-12 col-sm-6 col-md-4 img-fluid mb-3" data-fancybox="images"
-                        data-caption="">
-                        <img class="d-block w-100 responsive" src="images/floorplan1.jpg" alt="">
-                      </a>
-                  
-                      <div class="row mt-4">
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                          <div>
-                            <p class="mb-0 d-flex align-items-center">
-                              <span><img src="images/bedroom.png" class="small_icon" alt=""></span>
-                              Rooms : &nbsp; <span><b>3</b></span>
-                            </p>
-                          </div>
-                        </div>
-                  
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                          <div>
-                            <p class="mb-0 d-flex align-items-center">
-                              <span><img src="images/bathroom.png" class="small_icon" alt=""></span>
-                              Bath Rooms : &nbsp; <span><b>2</b></span>
-                            </p>
-                          </div>
-                        </div>
-                  
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                          <div>
-                            <p class="mb-0 d-flex align-items-center">
-                              <span><img src="images/garage.png" class="small_icon" alt=""></span>
-                              Garage : &nbsp; <span><b>1</b></span>
-                            </p>
-                          </div>
-                        </div>
-                  
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                          <div>
-                            <p class="mb-0 d-flex align-items-center">
-                              <span><img src="images/size.png" class="small_icon" alt=""></span>
-                              Size : &nbsp; <span><b>3326 Sq Ft</b></span>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  
-                    <!-- ==================== -->
-                  
-                    <div class="tab-pane fade" id="new-custom-pills-roadmap" role="tabpanel"
-                      aria-labelledby="new-custom-pills-roadmap-tab">
-                      <a href="images/floorplan2.jpg" class="mb-4 col-12 col-sm-6 col-md-4 img-fluid mb-3" data-fancybox="images"
-                        data-caption="">
-                        <img class="d-block w-100 responsive" src="images/floorplan2.jpg" alt="">
-                      </a>
-                    </div>
-                  
-                    <!-- =================== -->
-                  
-                    <div class="tab-pane fade" id="new-custom-pills-tour" role="tabpanel" aria-labelledby="new-custom-pills-tour-tab">
-                      <a href="images/floorplan3.jpg" class="mb-4 col-12 col-sm-6 col-md-4 img-fluid mb-3" data-fancybox="images"
-                        data-caption="">
-                        <img class="d-block w-100 responsive" src="images/floorplan3.jpg" alt="">
-                      </a>
-                    </div>
-                  </div>
-
-
-
-                </div>
-        
-              </div>
-        
-              <!-- ================= -->
-        
-              <div class="tab-pane fade" id="v-pills-history" role="tabpanel" aria-labelledby="v-pills-history-tab">
-        
-                <h2 class="accordion-header d-lg-none" id="rel_05">
-                  <button class="accordion-button collapsed mobile_tab_accor_btn" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#rel_coll_05" aria-expanded="false" aria-controls="rel_coll_05">
-                    3BR Suites - Ground Floor Plan
-                  </button>
-                </h2>
-                <div id="rel_coll_05" class="accordion-collapse collapse d-lg-block" aria-labelledby="rel_05"
-                  data-bs-parent="#v-pills-tabContent">
                  
-                <ul class="nav nav-pills mb-3 border-bottom border-2 arrow_tab " id="updated-pills-tab" role="tablist">
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link active position-relative" id="updated-pills-location-tab" data-bs-toggle="pill"
-                      data-bs-target="#updated-pills-location" type="button" role="tab" aria-controls="updated-pills-location"
-                      aria-selected="true">1BR Nexus - Ground Floor Plan</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link position-relative" id="updated-pills-roadmap-tab" data-bs-toggle="pill"
-                      data-bs-target="#updated-pills-roadmap" type="button" role="tab" aria-controls="updated-pills-roadmap"
-                      aria-selected="false">1BR Nexus - Typical (1st & 2nd) Floor Plan</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link position-relative" id="updated-pills-tour-tab" data-bs-toggle="pill"
-                      data-bs-target="#updated-pills-tour" type="button" role="tab" aria-controls="updated-pills-tour"
-                      aria-selected="false">1BR Nexus - Roof Terrace Plan</button>
-                  </li>
-                </ul>
-                
-                <div class="tab-content p-3" id="updated-pills-tabContent">
-                  <div class="tab-pane fade show active" id="updated-pills-location" role="tabpanel"
-                    aria-labelledby="updated-pills-location-tab">
-                    <a href="images/floorplan1.jpg" class="mb-4 col-12 col-sm-6 col-md-4 img-fluid mb-3" data-fancybox="images"
-                      data-caption="">
-                      <img class="d-block w-100 responsive" src="images/floorplan1.jpg" alt="">
-                    </a>
-                
-                    <div class="row mt-4">
-                      <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                        <div>
-                          <p class="mb-0 d-flex align-items-center">
-                            <span><img src="images/bedroom.png" class="small_icon" alt=""></span>
-                            Rooms : &nbsp; <span><b>3</b></span>
-                          </p>
-                        </div>
-                      </div>
-                
-                      <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                        <div>
-                          <p class="mb-0 d-flex align-items-center">
-                            <span><img src="images/bathroom.png" class="small_icon" alt=""></span>
-                            Bath Rooms : &nbsp; <span><b>2</b></span>
-                          </p>
-                        </div>
-                      </div>
-                
-                      <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                        <div>
-                          <p class="mb-0 d-flex align-items-center">
-                            <span><img src="images/garage.png" class="small_icon" alt=""></span>
-                            Garage : &nbsp; <span><b>1</b></span>
-                          </p>
-                        </div>
-                      </div>
-                
-                      <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                        <div>
-                          <p class="mb-0 d-flex align-items-center">
-                            <span><img src="images/size.png" class="small_icon" alt=""></span>
-                            Size : &nbsp; <span><b>3326 Sq Ft</b></span>
-                          </p>
-                        </div>
-                      </div>
+                  <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                    <div>
+                      <p class="mb-0 d-flex align-items-center">
+                        <span><img src="images/bathroom.png" class="small_icon" alt=""></span>
+                       Bath Rooms : &nbsp; <span><b>2</b></span>
+                      </p>
                     </div>
                   </div>
-                
-                  <!-- ==================== -->
-                
-                  <div class="tab-pane fade" id="updated-pills-roadmap" role="tabpanel" aria-labelledby="updated-pills-roadmap-tab">
-                    <a href="images/floorplan2.jpg" class="mb-4 col-12 col-sm-6 col-md-4 img-fluid mb-3" data-fancybox="images"
-                      data-caption="">
-                      <img class="d-block w-100 responsive" src="images/floorplan2.jpg" alt="">
-                    </a>
-                  </div>
-                
-                  <!-- =================== -->
-                
-                  <div class="tab-pane fade" id="updated-pills-tour" role="tabpanel" aria-labelledby="updated-pills-tour-tab">
-                    <a href="images/floorplan3.jpg" class="mb-4 col-12 col-sm-6 col-md-4 img-fluid mb-3" data-fancybox="images"
-                      data-caption="">
-                      <img class="d-block w-100 responsive" src="images/floorplan3.jpg" alt="">
-                    </a>
-                  </div>
-                </div>
 
+                  <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                    <div>
+                      <p class="mb-0 d-flex align-items-center">
+                        <span><img src="images/garage.png" class="small_icon" alt=""></span>                        
+                          Garage : &nbsp; <span><b>1</b></span>
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                    <div>
+                      <p class="mb-0 d-flex align-items-center">
+                        <span><img src="images/size.png" class="small_icon" alt=""></span>
+                          Size : &nbsp; <span><b>3326 Sq Ft</b></span>
+                      </p>
+                    </div>
+                  </div>
 
                 </div>
-        
               </div>
-        
-              <!-- ================= -->
-        
-              <div class="tab-pane fade" id="v-pills-committee" role="tabpanel" aria-labelledby="v-pills-committee-tab">
-        
-                <h2 class="accordion-header d-lg-none" id="rel_06">
-                  <button class="accordion-button collapsed mobile_tab_accor_btn" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#rel_coll_06" aria-expanded="false" aria-controls="rel_coll_06">
-                    Master Plan
-                  </button>
-                </h2>
-                <div id="rel_coll_06" class="accordion-collapse collapse d-lg-block" aria-labelledby="rel_06"
-                  data-bs-parent="#v-pills-tabContent">
-                  qqqqqqqqqqqqqqqqqqqqq
-                </div>
-        
+            
+              <!-- ==================== -->
+            
+              <div class="tab-pane fade" id="custom-pills-roadmap" role="tabpanel" aria-labelledby="custom-pills-roadmap-tab">
+                <img src="images/floorplan2.jpg" alt="" class="w-100 responsive">
               </div>
-        
-              <!-- ================= -->
-        
+            
+              <!-- =================== -->
+            
+              <div class="tab-pane fade" id="custom-pills-tour" role="tabpanel" aria-labelledby="custom-pills-tour-tab">
+                <img src="images/floorplan3.jpg" alt="" class="w-100 responsive">
+              </div>
             </div>
           </div>
-        
-        </div>
-      </div>
+          
+          <!-- ==================================== -->
+          <!-- ==================================== -->
 
+          <div class="tab-pane fade" id="pills-profile1" role="tabpanel" aria-labelledby="pills-profile-tab1">
+            <ul class="nav nav-pills mb-3 border-bottom border-2 arrow_tab " id="custom-pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active position-relative" id="custom-pills-location-tab" data-bs-toggle="pill"
+                  data-bs-target="#custom-pills-location" type="button" role="tab" aria-controls="custom-pills-location"
+                  aria-selected="true">1BR Nexus - Ground Floor Plan</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link position-relative" id="custom-pills-roadmap-tab" data-bs-toggle="pill"
+                  data-bs-target="#custom-pills-roadmap" type="button" role="tab" aria-controls="custom-pills-roadmap"
+                  aria-selected="false">1BR Nexus - Typical ( 1st & 2nd ) Floor Plan</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link position-relative" id="custom-pills-tour-tab" data-bs-toggle="pill"
+                  data-bs-target="#custom-pills-tour" type="button" role="tab" aria-controls="custom-pills-tour"
+                  aria-selected="false">1BR Nexus - Roof Terrace Plan</button>
+              </li>
+            
+            
+            </ul>
+            <div class="tab-content p-3" id="custom-pills-tabContent">
+              <div class="tab-pane fade show active" id="custom-pills-location" role="tabpanel"
+                aria-labelledby="custom-pills-location-tab">
+                <img src="images/floorplan1.jpg" alt="" class="w-100 responsive">
+              </div>
+            
+              <!-- ==================== -->
+            
+              <div class="tab-pane fade" id="custom-pills-roadmap" role="tabpanel" aria-labelledby="custom-pills-roadmap-tab">
+                <img src="images/floorplan2.jpg" alt="" class="w-100 responsive">
+              </div>
+            
+              <!-- =================== -->
+            
+              <div class="tab-pane fade" id="custom-pills-tour" role="tabpanel" aria-labelledby="custom-pills-tour-tab">
+                <img src="images/floorplan3.jpg" alt="" class="w-100 responsive">
+              </div>
+            </div>
+          </div>
+          
+          <!-- ==================================== -->
+          <!-- ==================================== -->
+
+          <div class="tab-pane fade" id="pills-contact1" role="tabpanel" aria-labelledby="pills-contact-tab1">
+            <ul class="nav nav-pills mb-3 border-bottom border-2 arrow_tab " id="custom-pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active position-relative" id="custom-pills-location-tab" data-bs-toggle="pill"
+                  data-bs-target="#custom-pills-location" type="button" role="tab" aria-controls="custom-pills-location"
+                  aria-selected="true">1BR Nexus - Ground Floor Plan</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link position-relative" id="custom-pills-roadmap-tab" data-bs-toggle="pill"
+                  data-bs-target="#custom-pills-roadmap" type="button" role="tab" aria-controls="custom-pills-roadmap"
+                  aria-selected="false">1BR Nexus - Typical ( 1st & 2nd ) Floor Plan</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link position-relative" id="custom-pills-tour-tab" data-bs-toggle="pill"
+                  data-bs-target="#custom-pills-tour" type="button" role="tab" aria-controls="custom-pills-tour"
+                  aria-selected="false">1BR Nexus - Roof Terrace Plan</button>
+              </li>
+            
+            
+            </ul>
+            <div class="tab-content p-3" id="custom-pills-tabContent">
+              <div class="tab-pane fade show active" id="custom-pills-location" role="tabpanel"
+                aria-labelledby="custom-pills-location-tab">
+                <img src="images/floorplan1.jpg" alt="" class="w-100 responsive">
+              </div>
+            
+              <!-- ==================== -->
+            
+              <div class="tab-pane fade" id="custom-pills-roadmap" role="tabpanel" aria-labelledby="custom-pills-roadmap-tab">
+                <img src="images/floorplan2.jpg" alt="" class="w-100 responsive">
+              </div>
+            
+              <!-- =================== -->
+            
+              <div class="tab-pane fade" id="custom-pills-tour" role="tabpanel" aria-labelledby="custom-pills-tour-tab">
+                <img src="images/floorplan3.jpg" alt="" class="w-100 responsive">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
      </div>
     <!-- floor plans end -->
 
@@ -1772,10 +1426,6 @@
         }
       });
     </script>
-
-    <!-- gallery -->
-    <script src="gallery/fancybox.min.js"></script>
-    <!-- gallery -->
 
   </body>
 </html>
