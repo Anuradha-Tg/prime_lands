@@ -205,6 +205,12 @@ hr {
   border-radius: 10px;
 }
 
+.red_border_left{
+    border-left: 1px solid #F80012;
+    margin-left: 15px;
+    padding-left: 15px;
+}
+
 /* Arrow button CSS start  */
 
 .arrow_btn {
@@ -903,6 +909,11 @@ main {
   z-index: 999;
 }
 
+.large_icon{
+  width: 40px;
+  height: 40px;
+}
+
 .medium_icon {
   width: 30px;
   height: 30px;
@@ -1097,12 +1108,29 @@ main {
   padding: 0px 30px;
 }
 
-.news_sec .grid_item p {
+.h5_line_3{
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  min-height: 58px;
 }
+
+.p_line_3{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  min-height: 60px;
+}
+
+/* .news_sec .grid_item p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  min-height: 60px;
+} */
 
 /* Gallery slider css start  */
 .gallery_slider {
@@ -1848,6 +1876,16 @@ main {
   margin-top: -180px;
 }
 
+.services_sec{
+  padding-bottom: 60px;
+}
+
+.serv_list_sec{
+  margin-top: -90px;
+  position: relative;
+  z-index: 999;
+}
+
 .line_vector{
   top: -140px;
   right: 500px;
@@ -1888,6 +1926,37 @@ main {
   color: #F80012;
 }
 
+.white_content_box{
+  padding: 40px;
+  margin-bottom: 30px;
+}
+
+.publications_sec{
+  background-size: 1800px;
+  background-repeat: no-repeat;
+}
+
+/* File upload CSS start  */
+.custom_file_input {
+  position: relative;
+  overflow: hidden;
+}
+
+.custom_file_input::file-selector-button {
+  display: none; /* Hides the choose file button */
+}
+/* File upload CSS end  */
+
+.main_forms label{
+  color: #ffffff;
+  margin-bottom: 7px;
+}
+
+.vector_img{
+  bottom: 5%;
+  right: 45%;
+}
+
 /* accordion start */
 
 .tab-content .accordion-item {
@@ -1900,6 +1969,7 @@ main {
 }
 
  /* accordion end */
+
 
 /***************************************************************************************/
 /***************************************************************************************/
