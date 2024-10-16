@@ -526,8 +526,15 @@
                 <!-- ========================== -->
               
                 <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label">Keyword Search</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Type Here....">
+                  <label for="exampleDataList" class="form-label">Keyword Search</label>
+                  <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type Here....">
+                  <datalist id="datalistOptions">
+                    <option value="San Francisco">
+                    <option value="New York">
+                    <option value="Seattle">
+                    <option value="Los Angeles">
+                    <option value="Chicago">
+                  </datalist>
                 </div>
               
                 <!-- filter btn -->
