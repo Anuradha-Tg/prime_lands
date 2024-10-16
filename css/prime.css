@@ -1256,6 +1256,8 @@ main {
   height: 54px;
 }
 
+/* white icon box */
+
 .white_icon_box img{
   transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
@@ -1310,6 +1312,40 @@ main {
 .white_icon_box:hover .icon_black{
   display: none;
 }
+
+/* gray icon box */
+
+.gray_icon_box img {
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+
+.gray_icon_box {
+  background-color: #E8E8E8;
+  padding: 20px 24px;
+  border-radius: 5px;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  width: 100%;
+}
+
+.gray_icon_box:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.gray_icon_box .text_box {
+  border-left: 1px solid #F80012;
+  margin-left: 15px;
+  padding-left: 15px;
+}
+
+.gray_icon_box .text_box {
+  border-left: 1px solid #F80012;
+  margin-left: 15px;
+  padding: 6px 15px;
+}
+
+/* gray icon box */
 
 .journey_sec {
   margin-top: -95px;
