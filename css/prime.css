@@ -2020,6 +2020,40 @@ main {
   right: 45%;
 }
 
+/* accordion start */
+
+.tab-content .accordion-item {
+  background-color: #fff;
+  border: none;
+}
+
+.nav-tabs {
+  border-bottom: none !important;
+}
+
+ /* accordion end */
+
+ .vacancy_card{
+  padding: 25px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+ }
+
+ .testi_sec .nav-tabs .nav-link span{
+  border-left: 1px solid #F80012;
+  margin-left: 15px;
+  padding-left: 15px;
+ }
+
+ .no_result{
+  border-radius: 5px;
+  background-color: #FAB8BC;
+  color: #333333;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 10px;
+ }
+
 /***************************************************************************************/
 /***************************************************************************************/
 /***************************************************************************************/
