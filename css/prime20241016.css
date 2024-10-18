@@ -110,14 +110,6 @@ hr {
   font-weight: 500;
 }
 
-.rotate_y{
-  transform: rotatey(180deg);
-}
-
-.none_hover:hover{
-  box-shadow: none !important;
-}
-
 .about_awards_slider h2 {
   position: relative;
   margin-left: 10px;
@@ -1989,10 +1981,6 @@ main {
   margin-bottom: 30px;
 }
 
-.shadow_none:hover{
-  box-shadow: none;
-}
-
 .publications_sec{
   background-size: 1800px;
   background-repeat: no-repeat;
@@ -2002,7 +1990,6 @@ main {
 .custom_file_input {
   position: relative;
   overflow: hidden;
-  padding: 10px;
 }
 
 .custom_file_input::file-selector-button {
