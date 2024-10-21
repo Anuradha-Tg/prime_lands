@@ -2054,6 +2054,35 @@ main {
   padding: 10px;
  }
 
+ /* Custom modal CSS start  */
+  .custom_modal .modal-body{
+    padding: 40px;
+  }
+
+  .custom_modal .modal_close {
+    right: -17px;
+    top: -13px;
+    z-index: 9999;
+    background-color: #73A9AD;
+    border-radius: 100%;
+    display: flex;
+    width: 35px;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s ease;
+  }
+
+  .custom_modal .modal_close:hover {
+    background-color: #75A47F;
+  }
+
+  .custom_modal .btn-close{
+    background: transparent url("../images/close_icon.png") center/1em auto no-repeat;
+    opacity: 1;
+  }
+ /* Custom modal CSS end  */
+
 /***************************************************************************************/
 /***************************************************************************************/
 /***************************************************************************************/

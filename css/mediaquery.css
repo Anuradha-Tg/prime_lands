@@ -88,6 +88,14 @@
     font-size: 48px;
   }
 
+  .custom_modal .modal-dialog {
+    padding: 20px;
+  }
+
+  .custom_modal .modal-body{
+    padding: 30px;
+  }
+
 }
 
 /* Extra Small Devices, Phones */
