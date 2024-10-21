@@ -84,6 +84,44 @@
   </head>
   <body>
 
+    <!-- Brochure Modal Start   -->
+    <!-- Modal -->
+    <div class="modal fade custom_modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body position-relative">
+            <div class="modal_close position-absolute">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="row">
+              <div class="col-12 mb-3">
+                <label for="exampleFormControlInput1" class="form-label mb-1">Name<span class="ms-2 text-danger">*</span></label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+              </div>
+              <div class="col-12 mb-3">
+                <label for="exampleFormControlInput1" class="form-label mb-1">Email Address<span class="ms-2 text-danger">*</span></label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email Address">
+              </div>
+              <div class="col-12 mb-3">
+                <label for="exampleFormControlInput1" class="form-label mb-1">Phone Number<span class="ms-2 text-danger">*</span></label>
+                <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="Phone Number">
+              </div>
+            </div>
+            <div>
+              <p class="mb-0 fst-italic">Read our <a href="#" class="text-decoration-underline green_text">Privacy Policy</a></p>
+            </div>
+            <div class="text-end mt-3">
+              <button type="button" class="btn custom_btn shadow-none dark_btn">
+                Submit
+              </button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Brochure Modal End  -->
+
     <a href="#">
       <div class="cal_btn text-center">
         <img src="images/calculator.png" alt="Calculator Icon">
@@ -494,7 +532,7 @@
           <b>Invest in YOLO by Prime today – Because You Only Live Once!</b>
         </p>
 
-        <a href="">
+        <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
           <div class="white_icon_box d-flex justify-content-center align-items-center mt-5">
             <img src="images/brochure_black.png" alt="" class="medium_icon icon_black">
             <img src="images/brochure_white.png" alt="" class="medium_icon icon_white">
